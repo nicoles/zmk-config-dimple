@@ -6,6 +6,10 @@ if BOARD_DIMPLE
 config ZMK_KEYBOARD_NAME
 	default "dimple"
 
+# attempting to troubleshoot disconnect bug
+config ZMK_BLE_THREAD_STACK_SIZE
+	default 768
+
 if USB_DEVICE_STACK
 
 config USB_NRFX
